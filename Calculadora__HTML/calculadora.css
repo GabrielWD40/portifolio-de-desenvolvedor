@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    /* Definindo a paleta de cores padrão para esse exercício */
+    --cor1: #2b2726;
+    --cor2: black;
+    --cor3: gray;
+    --cor4: #7dad934a;
+    --cor5: #bacca4;
+
+
+    --cor_opaca: rgba(125, 173, 147, 0.122);
+    --cor_opaca2: rgba(255, 68, 0, 0.900); 
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-image: url('background.jpg'); */
+    
+    color: black;
+    height: 100vh;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 1015px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article{
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: justify;
+    max-width: 550px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+}
+
+article > h1{
+    text-align: center;
+}
+
+.corpo-da-calculadora{
+    height: 550px;
+    width: 420px;
+
+    /* Centralizando a nossa calculadora ao cento do HTML */
+    border-radius: 15px;
+    background-color: var(--cor2);
+
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.visor-da-calculadora{
+    height: 80px;
+    width: 380px;
+
+    margin-top: 30px;
+    margin-left: 20px;
+    
+    border-radius: 10px;
+    
+    background-color: rgb(242, 242, 242);
+}
+
+.teclado-dos-botoes{
+
+    height: 400px;
+    width: 380px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+    background-color: var(--cor_opaca);
+    box-sizing: border-box;
+}
+
+.fileira-de-botoes{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.fileira-de-botoes > button{
+    margin: 5px 10px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: var(--cor3);
+    font-size: 25px;
+    width: 80px;
+
+}
+
+button.operacoes{
+    background-color: var(--cor_opaca2);
+}
+
+button:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 29px;
+
+    transition: 0.8s;
+    background-color: rgba(255, 68, 0, 0.800);
+}
+
+button.operacoes:hover{
+    background-color: white;
+    color: orangered;
+    transition: 0.8s;
+}
+
+footer {
+    background-color: var(--cor_opaca);
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.100);
+    border-radius: 5px;
+}
+
+a:hover{
+    font-size: 18px;
+    transition: 1.1s;
+    font-weight: bold;
+}
+span:hover{
+    font-size: 18px;
+    transition: 1.1s;
+    font-weight: bold;
+}
